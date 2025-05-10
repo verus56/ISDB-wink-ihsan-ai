@@ -1,112 +1,260 @@
-# Islamic Banking Q&A System
+# AAOIFI Islamic Finance Challenges
 
-This project implements a question-answering system for Islamic banking scenarios using LangChain, LangGraph, and OpenAI. The system uses a vector store created from a PDF document to retrieve relevant information and generate detailed answers to questions about Islamic banking concepts, calculations, and scenarios, with a focus on accounting journal entries according to AAOIFI standards.
+This repository contains solutions for three challenges in Islamic Finance, focusing on AAOIFI (Accounting and Auditing Organization for Islamic Financial Institutions) standards implementation, identification, and enhancement.
 
-## Features
+## Table of Contents
 
-- PDF document processing and chunking
-- Vector store creation using Chroma with cosine similarity
-- Persistent storage of vector embeddings
-- Question-answering workflow using LangGraph
-- Interactive Q&A interface
-- Specialized Islamic finance accounting prompt with AAOIFI standards
-- Structured output format for journal entries
+- [Challenge 1: Islamic Finance Accounting Calculator](#challenge-1-islamic-finance-accounting-calculator-aaoifi-standards)
+- [Challenge 2: AAOIFI FAS Identification System](#challenge-2-aaoifi-fas-identification-system)
+- [Challenge 3: AAOIFI Standards Enhancement System](#challenge-3-aaoifi-standards-enhancement-system)
+- [Setup and Requirements](#setup-and-requirements)
+- [Challenge Documentation](#challenge-documentation)
 
-## Requirements
+## Challenge 1: Islamic Finance Accounting Calculator (AAOIFI Standards)
+
+### Overview
+
+An advanced Retrieval-Augmented Generation (RAG) system designed to answer complex questions about Islamic finance accounting following AAOIFI standards. It provides step-by-step calculations, journal entries, and explanations for contracts like Murabaha and Ijarah.
+
+### System Architecture
+
+- **Document Ingestion**: Loads and parses PDF documents containing AAOIFI standards and examples.
+- **Semantic Chunking**: Splits documents into meaningful chunks using custom rules and enriches them with metadata.
+- **Vector Embedding**: Converts chunks into vector representations using OpenAI or Gemini embeddings.
+- **Vector Store (ChromaDB)**: Stores and indexes embeddings for fast similarity search.
+- **Retriever**: Finds the most relevant chunks for a user query using Maximum Marginal Relevance (MMR).
+- **Prompt Engineering**: Crafts a detailed prompt with context and calculation instructions for the LLM.
+- **LLM Reasoning**: Uses OpenAI GPT-4 Turbo or Google Gemini to generate answers, calculations, and journal entries.
+- **User Interface**: Command-line interface for interactive Q&A.
+
+### How the System Works
+
+1. **PDF Ingestion & Metadata Extraction**
+2. **Semantic Chunking**
+3. **Vector Store Creation**
+4. **Retrieval-Augmented Generation (RAG)**
+5. **LLM Reasoning & Calculation**
+6. **Interactive Q&A**
+
+### Vector Store Deep Dive
+
+The vector store enables efficient semantic search across AAOIFI standards:
+- **Embedding Generation**: Using OpenAI's `text-embedding-3-large` or Google's Gemini embeddings
+- **ChromaDB Implementation**: Storing vectors alongside rich metadata
+- **Metadata-Enhanced Search**: Filtering by contract types, standards, document types
+- **Similarity Search**: Using cosine similarity with Maximum Marginal Relevance
+- **Persistence and Flexibility**: Supporting both OpenAI and Google Gemini models
+
+### Example Usage
+
+```
+Ghurair Corporation is the largest producer of Palm Oil in Saudi Arabia.
+It approached an Islamic Financial Institution (IFI) to finance an Oil Seed flanker machine on the basis of
+Murabaha on 1st February, 2024 with a deferred repayment arrangement.
+The machine was purchased for SR 150,000 by the IFI on 1st March, 2024. The IFI also incurred SR 15,000 for
+transportation, takaful and other expenses to bring the asset to the present condition and location.
+The machine was sold onwards on the same date on a credit period of 5 Months. The selling price was
+agreed at SR 175,000 which Ghurair Corporation agreed to repay on 31st July, 2024.
+```
+
+## Challenge 2: AAOIFI FAS Identification System
+
+### Overview
+
+An advanced system to analyze financial transactions and identify the most applicable AAOIFI Financial Accounting Standards (FAS) for Islamic finance. It uses a multi-stage Retrieval Augmented Generation (RAG) pipeline, advanced parsing, and probabilistic ranking.
+
+### How It Works
+
+1. **Input**: User provides a transaction scenario
+2. **Parsing**: `TransactionParser` extracts structured data from the scenario
+3. **Multi-Stage RAG Retrieval**:
+   - **Stage 1**: Domain filtering
+   - **Stage 2**: Detailed context matching
+   - **Stage 3**: Contradictory standards check
+4. **Multi-Perspective Analysis**: Matches features, ranks standards, generates reasoning
+5. **Response Generation**: Formats results with prioritized standards and reasoning
+
+### System Components
+
+- **parser_module.py**: Extracts structured elements from transaction text
+- **enhanced_rag.py**: Multi-stage retrieval pipeline for relevant FAS content
+- **analysis_engine.py**: Probabilistic ranking and reasoning for standard selection
+- **vector_store.py**: Loads and manages the vector database of AAOIFI standards
+- **main.py**: Orchestrates the workflow and provides the CLI interface
+
+### Example Workflow
+
+**User Input**:
+```
+Context: GreenTech exits in Year 3, and Al Baraka Bank buys out its stake.
+Adjustments:  
+Buyout Price: $1,750,000 
+Bank Ownership: 100% 
+Accounting Treatment:  
+Derecognition of GreenTech's equity 
+Recognition of acquisition expense 
+Journal Entry for Buyout: 
+Dr. GreenTech Equity      
+Cr. Cash              
+$1,750,000   
+$1,750,000   
+```
+
+**System Output**:
+- Identifies likely standards with probabilities
+- Provides reasoning for each recommendation
+- Highlights alternative treatments or contradictions
+
+### Advanced Features
+
+- **LLM Choice**: Supports both OpenAI GPT-4 and Google Gemini
+- **Embeddings**: Vector search can use OpenAI or Gemini embeddings
+- **Probabilistic Ranking**: Standards ranked using weighted features
+- **Edge Case Handling**: Special logic for construction contracts, reversals, banking/equity buyouts
+- **Explainability**: Every recommendation includes structured reasoning
+
+## Challenge 3: AAOIFI Standards Enhancement System
+
+### Overview
+
+A multi-agent system designed to analyze and enhance the standards set by AAOIFI. The system leverages specialized agents powered by GPT-4o and GPT-4-turbo models to ensure comprehensive evaluation and compliance with Shariah principles.
+
+### Key Features
+
+- **Dual-Model Architecture**: Uses both GPT-4o (primary) and GPT-4-turbo (secondary)
+- **Multi-Agent Collaboration**: Specialized agents for standards review, compliance checking, Shariah expertise, and financial analysis
+- **Transparent Amendment Process**: All amendments include reasoning and sources
+- **Enhanced Reporting**: Detailed reports with verification steps and confidence scores
+- **Visualization**: Process flowcharts and confidence heatmaps
+
+### How the System Works
+
+1. **Document Loading and Processing**: Loads AAOIFI standard documents and extracts text using PyPDF2
+2. **Dual-Model Analysis**: Primary analysis by GPT-4o, verification by GPT-4-turbo
+3. **Multi-Agent Workflow**: Orchestrates four specialized agents:
+   - **Standards Reviewer Agent**: Identifies enhancement opportunities
+   - **Compliance Checker Agent**: Verifies Shariah alignment
+   - **Shariah Expert Agent**: Provides Islamic jurisprudence insights
+   - **Financial Analyst Agent**: Assesses financial implications
+4. **Amendment Generation and Verification**: Formulates amendments with reasoning and sources
+5. **Visualization and Reporting**: Generates reports and visual flowcharts
+
+### System Architecture
+
+```
+                  ┌─────────────────┐
+                  │ Coordinator     │
+                  │ Agent           │
+                  └─────────────────┘
+                          │
+            ┌─────────────┼─────────────┐
+            │             │             │
+  ┌─────────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+  │ Standards     │ │ Shariah   │ │ Financial │
+  │ Reviewer      │ │ Expert    │ │ Analyst   │
+  └───────────────┘ └───────────┘ └───────────┘
+            │             │             │
+            └─────────────┼─────────────┘
+                          │
+                  ┌───────▼───────┐
+                  │ Compliance    │
+                  │ Checker       │
+                  └───────────────┘
+                          │
+                  ┌───────▼───────┐
+                  │ Report        │
+                  │ Generator     │
+                  └───────────────┘
+```
+
+### Project Structure
+
+```
+aaoifi-enhancement-system
+├── src
+│   ├── main.py                     # Entry point
+│   ├── agents                      # Agent implementations
+│   ├── tools                       # Utility tools
+│   ├── memory                      # Conversation history
+│   ├── config                      # Configuration settings
+│   └── utils                       # Utility functions
+├── data
+│   ├── standards                   # Standard documents
+│   └── output                      # Generated outputs
+├── tests                           # Unit tests
+├── requirements.txt                # Project dependencies
+├── run_agent.py                    # Script to run the system
+└── README.md                       # Project documentation
+```
+
+### Usage Examples
+
+**Example 1: Standard Review and Enhancement**
+```
+python run_agent.py
+```
+Output includes detailed analysis, amendment proposals, visualization flowcharts, and a full report.
+
+**Example 2: Custom Standard Analysis**
+1. Place your PDF file in the data directory
+2. Update the FINANCIAL_DATA_SOURCE environment variable
+3. Run the system
+
+## Setup and Requirements
+
+### General Requirements
 
 - Python 3.8+
-- Dependencies listed in `requirements.txt`
+- OpenAI API key
+- Google API key (optional for Gemini models)
 
-## Setup
+### Installation
 
-1. Clone this repository
-2. Install the required dependencies:
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd aaoifi-islamic-finance
+   ```
+
+2. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Make sure the `resouce.pdf` file is in the project directory
-4. Run the main script:
+
+3. Set up environment variables:
    ```
-   python main.py
+   OPENAI_API_KEY=your_openai_api_key
+   GOOGLE_API_KEY=your_google_api_key  # if using Gemini models
    ```
 
-## Usage
+### Running the Challenges
 
-When you run the script for the first time, it will:
+- **Challenge 1**:
+  ```
+  cd Challenge1
+  python challenggemini.py
+  ```
 
-1. Load and process the PDF document
-2. Split the document into manageable chunks
-3. Create a vector store from the document chunks and persist it to disk
-4. Run an example question about an Ijarah MBT arrangement
-5. Enter an interactive mode where you can ask your own questions
+- **Challenge 2**:
+  ```
+  cd Challenge2
+  python main.py
+  ```
 
-On subsequent runs, the script will:
+- **Challenge 3**:
+  ```
+  cd Challenge3/aaoifi-enhancement-system
+  python run_agent.py
+  ```
 
-1. Detect the existing vector store and skip the PDF processing step
-2. Load the previously created vector store directly
-3. Run the example question and enter interactive mode
+## Challenge Documentation
 
-This optimization ensures that the PDF is only processed once, making subsequent runs faster and more efficient.
+Each challenge has its own detailed README file that provides in-depth explanations, efficiency considerations, and specific requirements:
 
-In the interactive mode, you can type your questions about Islamic banking. Type 'exit' to quit the program.
+- **Challenge 1**: See `Challenge1/challgen1.md` for detailed documentation on the Islamic Finance Accounting Calculator, including system architecture, vector store implementation, and usage examples.
 
-## Example Question
+- **Challenge 2**: See `Challenge2/challgne2.md` for comprehensive information on the AAOIFI FAS Identification System, including the multi-stage RAG pipeline, parsing techniques, and example workflows.
 
-The system comes with a pre-loaded example question about an Ijarah MBT arrangement:
+- **Challenge 3**: See `Challenge3/aaoifi-enhancement-system/Challenge3.md` for extensive details on the AAOIFI Standards Enhancement System, including the multi-agent architecture, verification process, and visualization capabilities.
 
-```
-On 1 January 2019 Alpha Islamic bank (Lessee) entered into an Ijarah MBT arrangement with 
-Super Generators for Ijarah of a heavy-duty generator purchase by Super Generators at a price 
-of USD 450,000. 
-Super Generators has also paid USD 12,000 as import tax and US 30,000 for freight charges. 
-The Ijarah Term is 02 years and expected residual value at the end USD 5,000. At the end of 
-Ijarah Term, it is highly likely that the option of transfer of ownership of the underlying asset to 
-the lessee shall be exercised through purchase at a price of USD 3,000. 
-Alpha Islamic Bank will amortize the 'right of use' on yearly basis and it is required to pay yearly 
-rental of USD 300,000.
-
-Please provide the journal entries for the initial recognition and subsequent accounting treatment for this Ijarah arrangement according to AAOIFI standards.
-```
-
-The system will respond with properly formatted journal entries according to AAOIFI standards, specifically FAS 9 (Ijarah and Ijarah Muntahia Bittamleek) or FAS 32 (Ijarah), in a structured table format.
-
-## How It Works
-
-The project is organized into two main components:
-
-1. **Vector Store Module** (`vector_store.py`):
-   - Handles all PDF processing and vector store operations
-   - On first run:
-     - Loads the PDF document and splits it into manageable chunks
-     - Embeds these chunks and stores them in a Chroma vector store with persistent storage
-     - Saves the vector store to disk in the "./chroma_db" directory
-   - On subsequent runs:
-     - Detects the existing Chroma database in the "./chroma_db" directory
-     - Loads the pre-processed vector store directly, skipping the PDF processing step
-
-2. **Main Application** (`main.py`):
-   - Imports the vector store functionality from the vector store module
-   - Creates a retriever from the vector store
-   - Implements the question-answering workflow using LangGraph
-   - Handles user interaction
-
-3. For all runs, when a question is asked, the system:
-   - Retrieves the most relevant chunks from the vector store using cosine similarity
-   - Passes these chunks along with the question to the LLM
-   - Generates a detailed answer based on the retrieved information, formatted according to AAOIFI standards
-   - Returns the answer to the user in a structured table format for journal entries
-
-This modular approach ensures that:
-- The resource-intensive PDF processing and embedding generation only happens once
-- The code is more maintainable with clear separation of concerns
-- The system is more efficient for repeated use
-- High-quality text embeddings using OpenAI's text-embedding-3-large model
-
-## Customization
-
-You can modify the following parameters in the code:
-- Chunk size and overlap in the `split_documents` function
-- Number of retrieved documents and similarity threshold in the `retriever` creation
-- The prompt template to customize which AAOIFI standards are included
-- The persistence directory for the Chroma vector store
-- The similarity function used for retrieval (currently set to cosine)
+These individual README files contain valuable information about implementation details, algorithm efficiencies, and specific requirements for each challenge.

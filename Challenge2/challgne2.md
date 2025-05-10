@@ -76,10 +76,22 @@ This project implements an advanced system to analyze financial transactions and
    $1,750,000   
    ```
 
-2. **System Output**:
-   - Identifies likely standards (e.g., FAS 4, FAS 20) with probabilities.
-   - Provides reasoning for each, referencing transaction features and FAS requirements.
-   - Highlights if there are alternative treatments or contradictions.
+   2. **System Output**:
+      - Identifies likely standards (e.g., FAS 4, FAS 20) with probabilities.
+      - Provides reasoning for each, referencing transaction features and FAS requirements.
+      - Highlights if there are alternative treatments or contradictions.
+       - Example:
+         ```
+         APPLICABLE STANDARDS WITH CONFIDENCE SCORES
+         This transaction involves Al Baraka Bank acquiring the remaining stake in GreenTech, thereby assuming 100% ownership, which is classified as a buyout transaction. The primary applicable standard, FAS 4, is most relevant as it governs the accounting treatment for changes in ownership interests, including the derecognition of equity interests and recognition of acquisition-related expenses. Additionally, FAS 20 and FAS 32 are pertinent, addressing issues related to reporting investments and the presentation of financial statements in Islamic finance contexts, respectively. The transaction is accounted for by debiting GreenTech Equity and crediting Cash for the buyout price of $1,750,000, reflecting the financial flows and changes in ownership accurately as per Islamic financial standards.
+    
+       | FAS Number | Probability | 
+       |-----------:|-------------|
+       | FAS 4 | 41.1% |
+       | FAS 20 | 36.8% |
+       | FAS 32 | 20.5% |
+       | FAS 10 | 1.6% |
+         ```
 
 ---
 

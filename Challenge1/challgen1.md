@@ -122,7 +122,7 @@ This vector store implementation enables the system to quickly identify the most
 
 1. **Startup**: User selects the LLM and embedding provider.
 2. **Vector Store**: System loads or creates a Chroma vector store from PDFs.
-3. **Question Input**: User enters a question (e.g., "How to account for a Murabaha contract under AAOIFI FAS 28?").
+3. **Question Input**: User enters a question (e.g.,").
 4. **Retrieval**: Relevant document chunks are retrieved from the vector store.
 5. **LLM Generation**: The LLM generates a detailed, step-by-step answer with calculations and journal entries.
 6. **Output**: The answer is displayed to the user.
@@ -138,6 +138,59 @@ transportation, takaful and other expenses to bring the asset to the present con
 The machine was sold onwards on the same date on a credit period of 5 Months. The selling price was
 agreed at SR 175,000 which Ghurair Corporation agreed to repay on 31st July, 2024.
 ```
+
+## Example Output
+
+ANSWER:
+### 1. Identify the Islamic Finance Contract
+The contract described is an **Ijarah Muntahia Bittamleek (Ijarah MBT)**.
+
+### 2. Determine the Applicable AAOIFI Financial Accounting Standard
+The applicable standard is **AAOIFI FAS 32**.
+
+### 3. Calculations for Ijarah MBT (FAS 32)
+
+#### a. Prime Cost of the Asset
+Prime cost = Purchase price + Import tax + Freight  
+\[ \text{Prime cost} = 450,000 + 12,000 + 30,000 = 492,000 \]
+
+#### b. Right-of-Use (ROU) Asset Calculation
+ROU asset = Prime cost - Purchase option price  
+\[ \text{ROU asset} = 492,000 - 3,000 = 489,000 \]
+
+#### c. Total Ijarah Payments
+Total rentals = Annual rental × Lease term  
+\[ \text{Total rentals} = 300,000 \times 2 = 600,000 \]
+
+#### d. Deferred Ijarah Cost
+Deferred Ijarah Cost = Total rentals - ROU asset  
+\[ \text{Deferred Ijarah Cost} = 600,000 - 489,000 = 111,000 \]
+
+#### e. Amortizable Amount
+Amortizable amount = ROU asset - (Residual value - Purchase price)  
+\[ \text{Amortizable amount} = 489,000 - (5,000 - 3,000) = 487,000 \]
+
+#### f. Annual Amortization
+Annual amortization = Amortizable amount ÷ Lease term  
+\[ \text{Annual amortization} = \frac{487,000}{2} = 243,500 \]
+
+### 4. Journal Entries
+
+#### Initial Recognition on 1 January 2019
+- **Dr. Right-of-Use Asset** 489,000  
+- **Cr. Ijarah Liability** 600,000  
+- **Dr. Deferred Ijarah Cost** 111,000  
+  - *Narration: To record the initial recognition of the right-of-use asset and Ijarah liability.*
+
+#### Annual Amortization Entry (End of Year 1 and Year 2)
+- **Dr. Amortization Expense** 243,500  
+- **Cr. Accumulated Amortization** 243,500  
+  - *Narration: To record the annual amortization of the right-of-use asset.*
+
+#### Rental Payment Entry (End of Year 1 and Year 2)
+- **Dr. Ijarah Liability** 300,000  
+- **Cr. Cash/Bank** 300,000  
+  - *Narration: To record the payment of annual Ijarah rental.*
 
 ## Extensibility
 
@@ -173,3 +226,4 @@ agreed at SR 175,000 which Ghurair Corporation agreed to repay on 31st July, 202
 
 MIT License
 
+`
