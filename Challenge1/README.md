@@ -104,7 +104,7 @@ This vector store implementation enables the system to quickly identify the most
 
 ## File Structure
 
-- `challenggemini.py`: Main application logic, user interface, and RAG pipeline.
+- `challengei.py`: Main application logic, user interface, and RAG pipeline.
 - `vector_store.py`: Handles PDF loading, chunking, metadata extraction, embedding, and vector store management.
 - `challgen1.md`: This documentation file.
 
@@ -222,8 +222,6 @@ Annual amortization = Amortizable amount ÷ Lease term
 - API keys for OpenAI and Google Gemini must be set as environment variables or in the script.
 - The system is designed for educational and research purposes.
 
-## License
 
-MIT License
 
 `
