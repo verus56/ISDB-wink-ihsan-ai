@@ -1,0 +1,137 @@
+{
+  "standard_info": {
+    "number": "Unknown",
+    "title": "Book 26-10-2015.indb",
+    "effective_date": "Unknown"
+  },
+  "primary_analysis": {
+    "standard_info": {
+      "number": "Unknown",
+      "title": "Book 26-10-2015.indb",
+      "effective_date": "Unknown"
+    },
+    "enhancement_opportunities": [
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address digital assets",
+        "priority": "medium"
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address sustainable finance",
+        "priority": "medium"
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address fintech integration",
+        "priority": "medium"
+      },
+      {
+        "type": "alignment",
+        "description": "Review and align with recent IFRS developments",
+        "priority": "high"
+      },
+      {
+        "type": "clarity",
+        "description": "Improve clarity by reducing vague language (found 48 instances)",
+        "priority": "medium"
+      }
+    ],
+    "revision_required": true,
+    "compliance_issues": [],
+    "missing_elements": []
+  },
+  "secondary_analysis": {
+    "standard_info": {
+      "number": "Unknown",
+      "title": "Book 26-10-2015.indb",
+      "effective_date": "Unknown"
+    },
+    "enhancement_opportunities": [
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address digital assets",
+        "priority": "medium",
+        "confidence": 0.63,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Book 26-10-2015.indb"
+        ]
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address sustainable finance",
+        "priority": "medium",
+        "confidence": 0.5,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Book 26-10-2015.indb"
+        ]
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address fintech integration",
+        "priority": "medium",
+        "confidence": 0.57,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Book 26-10-2015.indb"
+        ]
+      },
+      {
+        "type": "alignment",
+        "description": "Review and align with recent IFRS developments",
+        "priority": "high",
+        "confidence": 0.9,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Book 26-10-2015.indb"
+        ]
+      },
+      {
+        "type": "clarity",
+        "description": "Improve clarity by reducing vague language (found 48 instances)",
+        "priority": "medium",
+        "confidence": 0.53,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Book 26-10-2015.indb"
+        ]
+      }
+    ],
+    "revision_required": true,
+    "compliance_issues": [],
+    "missing_elements": []
+  },
+  "combined_enhancements": [
+    {
+      "type": "coverage",
+      "description": "Expand coverage to address digital assets",
+      "priority": "medium"
+    },
+    {
+      "type": "coverage",
+      "description": "Expand coverage to address sustainable finance",
+      "priority": "medium"
+    },
+    {
+      "type": "coverage",
+      "description": "Expand coverage to address fintech integration",
+      "priority": "medium"
+    },
+    {
+      "type": "alignment",
+      "description": "Review and align with recent IFRS developments",
+      "priority": "high"
+    },
+    {
+      "type": "clarity",
+      "description": "Improve clarity by reducing vague language (found 48 instances)",
+      "priority": "medium"
+    }
+  ],
+  "confidence_scores": {
+    "unknown": 0.5
+  },
+  "sources": {}
+}

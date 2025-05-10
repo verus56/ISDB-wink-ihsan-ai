@@ -1,0 +1,250 @@
+{
+  "amendments": [
+    {
+      "id": "b095bf14",
+      "title": "Improve Clarity of Placeholder Standard",
+      "description": "Revise the language and structure of the 'Placeholder Standard' standard to improve clarity and reduce ambiguity. Specifically:\n\n1. Replace vague terms ('may', 'might', 'could') with definitive language\n2. Add precise definitions for all technical terms\n3. Restructure content with clear section hierarchies and numbering\n4. Include flowcharts and decision trees for complex processes\n5. Provide concrete examples demonstrating the application of principles\n6. Add a glossary of terms with precise definitions\n7. Standardize terminology throughout the document",
+      "standard_id": "placeholder",
+      "justification": "The current standard scores 5/10 on clarity metrics. Improved wording and structure will reduce misinterpretation risks.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "36716af7",
+      "title": "Address definitions in Placeholder Standard",
+      "description": "Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'definitions'. The enhancement should:\n\n1. Add a dedicated section covering 'definitions'\n2. Provide clear principles and guidelines specific to 'definitions'\n3. Include practical examples demonstrating application\n4. Address common scenarios and edge cases related to 'definitions'\n5. Align the new content with existing sections\n6. Update the table of contents and index accordingly\n7. Include cross-references to related standards or sections",
+      "standard_id": "placeholder",
+      "justification": "The current standard lacks adequate coverage of definitions, which is essential for comprehensive guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "d4d6e99b",
+      "title": "Address scope in Placeholder Standard",
+      "description": "Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'scope'. The enhancement should:\n\n1. Add a dedicated section covering 'scope'\n2. Provide clear principles and guidelines specific to 'scope'\n3. Include practical examples demonstrating application\n4. Address common scenarios and edge cases related to 'scope'\n5. Align the new content with existing sections\n6. Update the table of contents and index accordingly\n7. Include cross-references to related standards or sections",
+      "standard_id": "placeholder",
+      "justification": "The current standard lacks adequate coverage of scope, which is essential for comprehensive guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "b8875d6f",
+      "title": "Address implementation guidance in Placeholder Standard",
+      "description": "Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'implementation guidance'. The enhancement should:\n\n1. Add a dedicated section covering 'implementation guidance'\n2. Provide clear principles and guidelines specific to 'implementation guidance'\n3. Include practical examples demonstrating application\n4. Address common scenarios and edge cases related to 'implementation guidance'\n5. Align the new content with existing sections\n6. Update the table of contents and index accordingly\n7. Include cross-references to related standards or sections",
+      "standard_id": "placeholder",
+      "justification": "The current standard lacks adequate coverage of implementation guidance, which is essential for comprehensive guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "616fb42c",
+      "title": "Address compliance assessment in Placeholder Standard",
+      "description": "Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'compliance assessment'. The enhancement should:\n\n1. Add a dedicated section covering 'compliance assessment'\n2. Provide clear principles and guidelines specific to 'compliance assessment'\n3. Include practical examples demonstrating application\n4. Address common scenarios and edge cases related to 'compliance assessment'\n5. Align the new content with existing sections\n6. Update the table of contents and index accordingly\n7. Include cross-references to related standards or sections",
+      "standard_id": "placeholder",
+      "justification": "The current standard lacks adequate coverage of compliance assessment, which is essential for comprehensive guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "97933ed2",
+      "title": "Address effective date in Placeholder Standard",
+      "description": "Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'effective date'. The enhancement should:\n\n1. Add a dedicated section covering 'effective date'\n2. Provide clear principles and guidelines specific to 'effective date'\n3. Include practical examples demonstrating application\n4. Address common scenarios and edge cases related to 'effective date'\n5. Align the new content with existing sections\n6. Update the table of contents and index accordingly\n7. Include cross-references to related standards or sections",
+      "standard_id": "placeholder",
+      "justification": "The current standard lacks adequate coverage of effective date, which is essential for comprehensive guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "554388d3",
+      "title": "Align Placeholder Standard with Current Industry Trends",
+      "description": "Update the 'Placeholder Standard' standard to align with the following current industry trends:\n\n1. Sustainable and Ethical Finance Integration\n   Description: Alignment of Islamic finance with sustainability principles\n   Examples to incorporate:\n   - Green Sukuk frameworks\n   - ESG integration in Islamic investment screening\n   - Sustainable development goals (SDG) alignment metrics\n   - Climate risk assessment for Islamic financial institutions\n\n2. Cross-Border Standardization\n   Description: Harmonization of Islamic finance standards across jurisdictions\n   Examples to incorporate:\n   - Standardized Sukuk documentation\n   - Common Shariah compliance frameworks\n   - Mutual recognition of Islamic finance certifications\n   - Global Islamic liquidity management standards\n\nRecommended approach:\n1. Review and update definitions to include new concepts\n2. Expand scope sections to address emerging practices\n3. Add implementation guidance specific to these trends\n4. Provide case studies demonstrating application\n5. Update references to include recent industry developments",
+      "standard_id": "placeholder",
+      "justification": "Standard is not aligned with 0 of 2 relevant trends.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "dfd8d366",
+      "title": "Resolve Regulatory Conflicts in Placeholder Standard",
+      "description": "Update the 'Placeholder Standard' standard to align with the following regulatory developments:\n\n1. Basel IV Implementation (Bank for International Settlements)\n\n2. IFRS 17 Insurance Contracts (International Accounting Standards Board)\n\nRecommended approach:\n1. Add explicit references to these regulatory frameworks\n2. Identify areas requiring harmonization between the standard and regulations\n3. Adjust requirements to ensure compliance with regulatory minimums\n4. Provide guidance on managing compliance with both the standard and regulations\n5. Include a regulatory compliance mapping appendix\n6. Consider jurisdiction-specific implementation notes where applicable",
+      "standard_id": "placeholder",
+      "justification": "The standard contains elements that may conflict with 2 recent regulatory developments.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "8ad8aadd",
+      "title": "Improve Implementability of Placeholder Standard",
+      "description": "Enhance the 'Placeholder Standard' standard to address the following implementation challenges:\n\n1. Insufficient Implementation Detail\n\n2. Lack Of Practical Examples\n\nRecommended approach:\n1. Develop detailed implementation guidance with step-by-step procedures\n2. Create templates and tools to facilitate practical application\n3. Add phased implementation options for complex requirements\n4. Provide case studies of successful implementation\n5. Include resource requirement estimations and planning guidance\n6. Develop implementation FAQs addressing common challenges\n7. Create assessment tools for implementation readiness",
+      "standard_id": "placeholder",
+      "justification": "Stakeholders face challenges implementing this standard due to 2 identified practical issues.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    },
+    {
+      "id": "50ce531b",
+      "title": "Develop Comprehensive Standard from Placeholder",
+      "description": "Transform the placeholder into a fully developed AAOIFI standard following best practices in standard design. The development should include:\n\n1. Comprehensive research of existing practices and benchmarks\n2. Stakeholder consultation with Islamic finance practitioners\n3. Development of clear principles and detailed guidelines\n4. Creation of implementation guidance and examples\n5. Alignment with relevant Shariah principles\n6. Consideration of cross-border application\n7. Incorporation of contemporary market practices\n8. Development of compliance assessment framework",
+      "standard_id": "placeholder",
+      "justification": "The current placeholder needs to be developed into a comprehensive standard to provide proper guidance.",
+      "shariah_compliance": "Fully compliant with Shariah principles",
+      "financial_impact": "Unknown",
+      "recommendation": "Approved for implementation",
+      "priority": 7,
+      "verification_results": {
+        "verified": true,
+        "confidence": 0.85,
+        "suggestions": [
+          "Consider adding explicit reference to relevant Quranic verses or Hadiths"
+        ],
+        "reasoning": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+      }
+    }
+  ],
+  "reasoning": {
+    "b095bf14": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "36716af7": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "d4d6e99b": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "b8875d6f": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "616fb42c": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "97933ed2": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "554388d3": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "dfd8d366": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "8ad8aadd": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.",
+    "50ce531b": "The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references."
+  },
+  "sources": {
+    "b095bf14": [],
+    "36716af7": [],
+    "d4d6e99b": [],
+    "b8875d6f": [],
+    "616fb42c": [],
+    "97933ed2": [],
+    "554388d3": [],
+    "dfd8d366": [],
+    "8ad8aadd": [],
+    "50ce531b": []
+  },
+  "verification": {
+    "b095bf14": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "36716af7": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "d4d6e99b": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "b8875d6f": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "616fb42c": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "97933ed2": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "554388d3": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "dfd8d366": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "8ad8aadd": [
+      "Secondary model verification (confidence: 0.85)"
+    ],
+    "50ce531b": [
+      "Secondary model verification (confidence: 0.85)"
+    ]
+  }
+}

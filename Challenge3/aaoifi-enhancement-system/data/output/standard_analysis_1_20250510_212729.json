@@ -1,0 +1,137 @@
+{
+  "standard_info": {
+    "number": "1",
+    "title": "\u201cGeneral Presentation and Disclosure in",
+    "effective_date": "Unknown"
+  },
+  "primary_analysis": {
+    "standard_info": {
+      "number": "1",
+      "title": "\u201cGeneral Presentation and Disclosure in",
+      "effective_date": "Unknown"
+    },
+    "enhancement_opportunities": [
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address sustainable finance",
+        "priority": "medium"
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address fintech integration",
+        "priority": "medium"
+      },
+      {
+        "type": "alignment",
+        "description": "Review and align with recent IFRS developments",
+        "priority": "high"
+      },
+      {
+        "type": "clarity",
+        "description": "Add detailed implementation guidance and examples",
+        "priority": "medium"
+      },
+      {
+        "type": "clarity",
+        "description": "Improve clarity by reducing vague language (found 558 instances)",
+        "priority": "medium"
+      }
+    ],
+    "revision_required": true,
+    "compliance_issues": [],
+    "missing_elements": []
+  },
+  "secondary_analysis": {
+    "standard_info": {
+      "number": "1",
+      "title": "\u201cGeneral Presentation and Disclosure in",
+      "effective_date": "Unknown"
+    },
+    "enhancement_opportunities": [
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address sustainable finance",
+        "priority": "medium",
+        "confidence": 0.64,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Unknown"
+        ]
+      },
+      {
+        "type": "coverage",
+        "description": "Expand coverage to address fintech integration",
+        "priority": "medium",
+        "confidence": 0.54,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Unknown"
+        ]
+      },
+      {
+        "type": "alignment",
+        "description": "Review and align with recent IFRS developments",
+        "priority": "high",
+        "confidence": 0.88,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Unknown"
+        ]
+      },
+      {
+        "type": "clarity",
+        "description": "Add detailed implementation guidance and examples",
+        "priority": "medium",
+        "confidence": 0.66,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Unknown"
+        ]
+      },
+      {
+        "type": "clarity",
+        "description": "Improve clarity by reducing vague language (found 558 instances)",
+        "priority": "medium",
+        "confidence": 0.56,
+        "sources": [
+          "Contemporary Islamic Finance: Innovations, Applications and Best Practices",
+          "Source document: Unknown"
+        ]
+      }
+    ],
+    "revision_required": true,
+    "compliance_issues": [],
+    "missing_elements": []
+  },
+  "combined_enhancements": [
+    {
+      "type": "coverage",
+      "description": "Expand coverage to address sustainable finance",
+      "priority": "medium"
+    },
+    {
+      "type": "coverage",
+      "description": "Expand coverage to address fintech integration",
+      "priority": "medium"
+    },
+    {
+      "type": "alignment",
+      "description": "Review and align with recent IFRS developments",
+      "priority": "high"
+    },
+    {
+      "type": "clarity",
+      "description": "Add detailed implementation guidance and examples",
+      "priority": "medium"
+    },
+    {
+      "type": "clarity",
+      "description": "Improve clarity by reducing vague language (found 558 instances)",
+      "priority": "medium"
+    }
+  ],
+  "confidence_scores": {
+    "unknown": 0.5
+  },
+  "sources": {}
+}

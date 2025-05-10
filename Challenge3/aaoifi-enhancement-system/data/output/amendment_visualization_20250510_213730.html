@@ -1,0 +1,743 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AAOIFI Amendment Visualization</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            header {
+                background-color: #1e4d75;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+            .amendment {
+                background-color: #f8f8f8;
+                border-left: 5px solid #1e4d75;
+                margin-bottom: 30px;
+                padding: 20px;
+                border-radius: 0 5px 5px 0;
+            }
+            .amendment-header {
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .amendment-title {
+                font-size: 1.5em;
+                color: #1e4d75;
+                margin: 0;
+            }
+            .amendment-priority {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                color: white;
+                background-color: #f39c12;
+            }
+            .priority-high {
+                background-color: #e74c3c;
+            }
+            .priority-medium {
+                background-color: #f39c12;
+            }
+            .priority-low {
+                background-color: #3498db;
+            }
+            .section {
+                margin-bottom: 20px;
+            }
+            .section-title {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #1e4d75;
+            }
+            .verification {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .verification-icon {
+                margin-right: 15px;
+                font-size: 24px;
+                color: #2ecc71;
+            }
+            .not-verified {
+                color: #e74c3c;
+            }
+            .verification-details {
+                flex-grow: 1;
+            }
+            .confidence-bar-container {
+                width: 100%;
+                background-color: #e0e0e0;
+                height: 20px;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+            .confidence-bar {
+                height: 20px;
+                border-radius: 10px;
+                background-color: #2ecc71;
+            }
+            .sources-list {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            .sources-list li {
+                margin-bottom: 5px;
+                padding-left: 20px;
+                position: relative;
+            }
+            .sources-list li:before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #1e4d75;
+            }
+            .reasoning {
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-radius: 5px;
+                margin-top: 10px;
+                white-space: pre-line;
+            }
+            .workflow-container {
+                display: flex;
+                justify-content: center;
+                margin: 30px 0;
+            }
+            .workflow {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .workflow-step {
+                background-color: #3498db;
+                color: white;
+                padding: 10px 20px;
+                margin: 5px 0;
+                border-radius: 5px;
+                min-width: 150px;
+                text-align: center;
+            }
+            .workflow-arrow {
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7f8c8d;
+            }
+            footer {
+                margin-top: 40px;
+                text-align: center;
+                color: #7f8c8d;
+                font-size: 0.9em;
+                border-top: 1px solid #ddd;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>AAOIFI Amendment Visualization</h1>
+            <p>Generated on 2025-05-10 21:37:30</p>
+        </header>
+        
+        <div class="workflow-container">
+            <div class="workflow">                <div class="workflow-step">Standard Analysis</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Enhancement Identification</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Shariah Evaluation</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Financial Assessment</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Compliance Check</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Dual-Model Verification</div>
+                <div class="workflow-arrow">▼</div>
+                <div class="workflow-step">Final Amendment</div>
+            </div>
+        </div>
+    
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Improve Clarity of Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Revise the language and structure of the 'Placeholder Standard' standard to improve clarity and reduce ambiguity. Specifically:
+
+1. Replace vague terms ('may', 'might', 'could') with definitive language
+2. Add precise definitions for all technical terms
+3. Restructure content with clear section hierarchies and numbering
+4. Include flowcharts and decision trees for complex processes
+5. Provide concrete examples demonstrating the application of principles
+6. Add a glossary of terms with precise definitions
+7. Standardize terminology throughout the document
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Address definitions in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'definitions'. The enhancement should:
+
+1. Add a dedicated section covering 'definitions'
+2. Provide clear principles and guidelines specific to 'definitions'
+3. Include practical examples demonstrating application
+4. Address common scenarios and edge cases related to 'definitions'
+5. Align the new content with existing sections
+6. Update the table of contents and index accordingly
+7. Include cross-references to related standards or sections
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Address scope in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'scope'. The enhancement should:
+
+1. Add a dedicated section covering 'scope'
+2. Provide clear principles and guidelines specific to 'scope'
+3. Include practical examples demonstrating application
+4. Address common scenarios and edge cases related to 'scope'
+5. Align the new content with existing sections
+6. Update the table of contents and index accordingly
+7. Include cross-references to related standards or sections
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Address implementation guidance in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'implementation guidance'. The enhancement should:
+
+1. Add a dedicated section covering 'implementation guidance'
+2. Provide clear principles and guidelines specific to 'implementation guidance'
+3. Include practical examples demonstrating application
+4. Address common scenarios and edge cases related to 'implementation guidance'
+5. Align the new content with existing sections
+6. Update the table of contents and index accordingly
+7. Include cross-references to related standards or sections
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Address compliance assessment in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'compliance assessment'. The enhancement should:
+
+1. Add a dedicated section covering 'compliance assessment'
+2. Provide clear principles and guidelines specific to 'compliance assessment'
+3. Include practical examples demonstrating application
+4. Address common scenarios and edge cases related to 'compliance assessment'
+5. Align the new content with existing sections
+6. Update the table of contents and index accordingly
+7. Include cross-references to related standards or sections
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Address effective date in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Expand the 'Placeholder Standard' standard to address the current gap in guidance regarding 'effective date'. The enhancement should:
+
+1. Add a dedicated section covering 'effective date'
+2. Provide clear principles and guidelines specific to 'effective date'
+3. Include practical examples demonstrating application
+4. Address common scenarios and edge cases related to 'effective date'
+5. Align the new content with existing sections
+6. Update the table of contents and index accordingly
+7. Include cross-references to related standards or sections
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Align Placeholder Standard with Current Industry Trends</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Update the 'Placeholder Standard' standard to align with the following current industry trends:
+
+1. Sustainable and Ethical Finance Integration
+   Description: Alignment of Islamic finance with sustainability principles
+   Examples to incorporate:
+   - Green Sukuk frameworks
+   - ESG integration in Islamic investment screening
+   - Sustainable development goals (SDG) alignment metrics
+   - Climate risk assessment for Islamic financial institutions
+
+2. Cross-Border Standardization
+   Description: Harmonization of Islamic finance standards across jurisdictions
+   Examples to incorporate:
+   - Standardized Sukuk documentation
+   - Common Shariah compliance frameworks
+   - Mutual recognition of Islamic finance certifications
+   - Global Islamic liquidity management standards
+
+Recommended approach:
+1. Review and update definitions to include new concepts
+2. Expand scope sections to address emerging practices
+3. Add implementation guidance specific to these trends
+4. Provide case studies demonstrating application
+5. Update references to include recent industry developments
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Resolve Regulatory Conflicts in Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Update the 'Placeholder Standard' standard to align with the following regulatory developments:
+
+1. Basel IV Implementation (Bank for International Settlements)
+
+2. IFRS 17 Insurance Contracts (International Accounting Standards Board)
+
+Recommended approach:
+1. Add explicit references to these regulatory frameworks
+2. Identify areas requiring harmonization between the standard and regulations
+3. Adjust requirements to ensure compliance with regulatory minimums
+4. Provide guidance on managing compliance with both the standard and regulations
+5. Include a regulatory compliance mapping appendix
+6. Consider jurisdiction-specific implementation notes where applicable
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Improve Implementability of Placeholder Standard</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Enhance the 'Placeholder Standard' standard to address the following implementation challenges:
+
+1. Insufficient Implementation Detail
+
+2. Lack Of Practical Examples
+
+Recommended approach:
+1. Develop detailed implementation guidance with step-by-step procedures
+2. Create templates and tools to facilitate practical application
+3. Add phased implementation options for complex requirements
+4. Provide case studies of successful implementation
+5. Include resource requirement estimations and planning guidance
+6. Develop implementation FAQs addressing common challenges
+7. Create assessment tools for implementation readiness
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <div class="amendment">
+            <div class="amendment-header">
+                <h2 class="amendment-title">Develop Comprehensive Standard from Placeholder</h2>
+                <span class="amendment-priority priority-medium">MEDIUM</span>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Standard:</div>
+                Unknown Standard
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Description:</div>
+                Transform the placeholder into a fully developed AAOIFI standard following best practices in standard design. The development should include:
+
+1. Comprehensive research of existing practices and benchmarks
+2. Stakeholder consultation with Islamic finance practitioners
+3. Development of clear principles and detailed guidelines
+4. Creation of implementation guidance and examples
+5. Alignment with relevant Shariah principles
+6. Consideration of cross-border application
+7. Incorporation of contemporary market practices
+8. Development of compliance assessment framework
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Verification:</div>
+                <div class="verification">
+                    <div class="verification-icon">✔</div>
+                    <div class="verification-details">
+                        <div>Status: Verified</div>
+                        <div>Confidence: 85.0%</div>
+                        <div class="confidence-bar-container">
+                            <div class="confidence-bar" style="width: 85.0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section">
+                <div class="section-title">Reasoning:</div>
+                <div class="reasoning">
+                    The amendment is fundamentally sound and Shariah-compliant, but would benefit from explicit textual references.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Suggestions:</div>
+                <ul class="sources-list">
+            <li>Consider adding explicit reference to relevant Quranic verses or Hadiths</li></ul></div>
+            <div class="section">
+                <div class="section-title">Verification Steps:</div>
+                <ul class="sources-list">
+            <li>Secondary model verification (confidence: 0.85)</li></ul></div></div>
+        <footer>
+            <p>Generated by AAOIFI Standards Enhancement System</p>
+            <p>Models used: GPT-4o (primary) and GPT-4-turbo (secondary) with temperature 0.3</p>
+        </footer>
+    </body>
+    </html>
+    
