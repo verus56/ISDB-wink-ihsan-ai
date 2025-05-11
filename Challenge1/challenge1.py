@@ -9,8 +9,8 @@ from langchain_openai import ChatOpenAI
 from pprint import pprint
 
 # API key setup (you should use environment variables or a .env file in production)
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBVdL1c0gq0vztjKwKMar2Ns6PoULzEK9w"
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["GOOGLE_API_KEY"] = ""
+os.environ["OPENAI_API_KEY"] = ""
 
 
 # Function to initialize the appropriate LLM based on user choice
