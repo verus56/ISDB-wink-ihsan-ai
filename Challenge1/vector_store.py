@@ -8,8 +8,8 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 
 # Set API keys
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBVdL1c0gq0vztjKwKMar2Ns6PoULzEK9w"
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["GOOGLE_API_KEY"] = ""
 
 # Define the persistent directory for Chroma
 CHROMA_PERSIST_DIR = "./chroma_db"
